@@ -1,0 +1,241 @@
+/* 1. Global Styles */
+/* 2. Typography */
+/* 3. Components */
+    /* 3.1 Buttons */
+
+body{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    width: 1450px;
+    margin: auto;
+}
+
+.header, 
+.introduction,
+.footer {
+    background-color: #1f2937;
+    color: #E5E7EB;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding: 10px 20px;
+    flex: 1 1 auto;
+}
+
+.logo{
+    color: #F9FAF8;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-left: 180px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;    
+    margin-right: 180px;
+}
+
+li{
+    padding: 0px 15px;
+}
+
+.introduction {
+    justify-content: space-between;
+    flex: 3 1 auto;
+    padding: 100px 0px 120px 0px;
+}
+
+.blurb {
+    width: 450px;
+    margin-left: 195px;
+}
+
+.introduction img {
+    width: 450px;
+    height: auto;
+    margin-right: 200px;
+    border: 5px dotted white;
+    border-radius: 10px;
+}
+
+.blurb-header {
+    font-size: 48px;
+    font-weight: 900;
+    color:#F9FAF8;
+}
+
+.blurb-header, 
+.blurb-body, 
+.blurb-button {
+    padding: 10px 0px;
+}
+
+button {
+    background-color:#3882F6;
+    border: 5px #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    width: 130px;
+    height: auto;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.information {
+    display:flex;
+    color: #1f2937;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 200px;
+    gap: 50px;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    width: 1200px;
+    justify-content: center;
+    text-align: center;
+}
+
+.media-objects{
+    display: flex;
+    justify-content: center;
+}
+
+.media-objects * .img{
+    height: 150px;
+    width: 150px;
+    border: 5px solid hsl(217deg 91% 60%);
+    border-radius: 10px;
+    display: flex;
+    margin: auto; /* THIS IS VERY USEFUL FOR CENTERING, TOOK ME AGES TO RMB THIS     */
+}
+
+.imgone{ /*object-fit should be applied to the image, not the bordered div containing the image*/
+    object-fit: cover; /*ensures the image completely fills the box, no distortion, and excess on the side is cropped. */
+    width: 100%; /*either put 100% to specify that it completely fills the box, or specify the width and height of the containing box in px*/
+    height: 100%; /*if the original image is rectangular, then the shorter dimension (either width or height) will be made to fit w/ the container, and the longer dimension will be cropped*/
+}
+
+.imgtwo{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.imgthree{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.imgfour{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.img,
+.img-text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+    font-weight: 300;
+}
+
+.img-text{
+    width: 150px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    font-style: italic;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    flex: 3 1 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text,
+.quote-source{
+    display: flex;
+    width: 800px;
+}
+
+.quote-text{
+    font-size: 36px;
+    font-weight:300;
+    color: #1f2937;
+    font-style: italic;
+}
+
+.quote-source{
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.signup{
+    display: flex;
+    height: 200px;
+    flex: 2 1 auto;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8;
+    padding: 70px 0px;
+}
+
+.signup-box{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(217deg 91% 60%);
+    width: 850px;
+    padding: 50px 100px;
+    border-radius: 10px;
+}
+
+.signup-header{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.signup-footer{
+    font-size: 18px;
+}
+
+.signup-button{
+    border: 3px solid #F9FAF8;
+    border-radius: 10px;
+    width: 160px;
+    height: 45px;
+    font-size: 18px;
+}
+
+.footer{
+    display: flex;
+    flex: 1 1 auto;
+    color: #F9FAF8;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
